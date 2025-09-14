@@ -15,38 +15,409 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-
-  <body class="max-w-full">
-    <header class="pt-4">
-      <nav class="max-w-9/10 mx-auto flex justify-between bg-white pb-4">
+  <body class="max-w-full bg-green-100">
+    <header>
+      <nav
+        class="md:max-w-10/10 mx-auto flex justify-between bg-white pb-4 pt-4 md:pl-25 md:pr-25 pl-2 pr-2"
+      >
         <div class="flex items-center gap-2">
           <img class="w-13 h-13" src="assets/logo.png" alt="Logo" />
-          <h1 class="Title-font text-green-800 md:text-2xl text-xl" >Emergency<br />Service</h1>
+          <h1 class="Title-font text-green-800 md:text-2xl text-xl">
+            Emergency<br />Service
+          </h1>
         </div>
         <div class="flex items-center text-sm gap-3">
-          <div class="w-15 h-8 md:w-20 md:h-10 bg-green-100 flex gap-1 justify-center items-center rounded-3xl Sub-Title-font">
+          <div
+            class="w-15 h-8 md:w-20 md:h-10 bg-green-100 flex gap-1 justify-center items-center rounded-3xl Sub-Title-font"
+          >
             <div class="Likes-count">0</div>
             <img class="w-6 h-6" src="assets/heart.png" alt="Like" />
           </div>
-          <div class="w-15 h-8 md:w-20 md:h-10 bg-green-100 flex gap-1 justify-center items-center rounded-3xl Sub-Title-font">
+          <div
+            class="w-15 h-8 md:w-20 md:h-10 bg-green-100 flex gap-1 justify-center items-center rounded-3xl Sub-Title-font"
+          >
             <div class="Coins-count">100</div>
             <img class="w-5 h-5" src="assets/coin.png" alt="Coin" />
           </div>
-          <div class="w-15 h-8 md:w-25 md:h-10 bg-green-600 flex gap-1 justify-center items-center rounded-3xl Regular-font text-white">
+          <div
+            class="w-15 h-8 md:w-25 md:h-10 bg-green-600 flex gap-1 justify-center items-center rounded-3xl Regular-font text-white"
+          >
             <div class="Copy-count">0</div>
-            <div >Copy</div>
+            <div>Copy</div>
           </div>
         </div>
       </nav>
 
       <div class="banner bg-emerald-900 flex flex-col items-center gap-3 p-5">
-        <img class="w-25 h-25" src="assets/logo-dark.png" alt="Logo">
-        <h1 class="Title-font text-white text-3xl">Emergency Service Directory</h1>
-        <p class="Regular-font  text-white text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <img class="w-25 h-25" src="assets/logo-dark.png" alt="Logo" />
+        <h1 class="Title-font text-white text-3xl">
+          Emergency Service Directory
+        </h1>
+        <p class="Regular-font text-white text-xl">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
       </div>
     </header>
-    
-    <main></main>
+
+    <main>
+      <div
+        class="max-w-sm md:max-w-9/10 mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-7">
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/emergency.png"
+              alt="Emergency-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">National Emergency Number</h1>
+          <p class="roboto-gray text-gray-500">National Emergency</p>
+          <p class="pt-4 Sub-Title-font text-3xl">999</p>
+          <div
+            class="w-10 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            All
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-blue-100 rounded-2xl p-2"
+              src="assets/police.png"
+              alt="Helpline-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">Police Helpline Number</h1>
+          <p class="roboto-gray text-gray-500">Police</p>
+          <p class="pt-4 Sub-Title-font text-3xl">999</p>
+          <div
+            class="w-15 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            Police
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/fire-service.png"
+              alt="FireService-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">Fire Service Number</h1>
+          <p class="roboto-gray text-gray-500">Fire Service</p>
+          <p class="pt-4 Sub-Title-font text-3xl">999</p>
+          <div
+            class="w-10 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            Fire
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/ambulance.png"
+              alt="Emergency-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">Ambulance Service</h1>
+          <p class="roboto-gray text-gray-500">Ambulance</p>
+          <p class="pt-4 Sub-Title-font text-3xl">1994-999999</p>
+          <div
+            class="w-16 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            Health
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/emergency.png"
+              alt="Emergency-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">Women & Child Helpline</h1>
+          <p class="roboto-gray text-gray-500">Women & Child Helpline</p>
+          <p class="pt-4 Sub-Title-font text-3xl">109</p>
+          <div
+            class="w-13 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            Help
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/emergency.png"
+              alt="Emergency-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">Anti-Corruption Helpline</h1>
+          <p class="roboto-gray text-gray-500">Anti-Corruption</p>
+          <p class="pt-4 Sub-Title-font text-3xl">106</p>
+          <div
+            class="w-14 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            Govt.
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/emergency.png"
+              alt="Emergency-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">Electricity Helpline</h1>
+          <p class="roboto-gray text-gray-500">Electricity Outage</p>
+          <p class="pt-4 Sub-Title-font text-3xl">16216</p>
+          <div
+            class="w-22 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            Electricity
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/emergency.png"
+              alt="Emergency-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">Brac Helpline</h1>
+          <p class="roboto-gray text-gray-500">Brac</p>
+          <p class="pt-4 Sub-Title-font text-3xl">16445</p>
+          <div
+            class="w-10 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            NGO
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+
+        <div class="cards p-7 bg-white rounded-3xl ml-4 mr-4 md:m-0 shadow-md">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-14 h-14 bg-red-100 rounded-2xl p-2"
+              src="assets/emergency.png"
+              alt="Emergency-Icon"
+            />
+            <img class="w-8 h-8" src="assets/heart-regular-full.svg" alt="" />
+          </div>
+          <h1 class="Sub-Title-font text-xl pt-2">
+            Bangladesh Railway Helpline
+          </h1>
+          <p class="roboto-gray text-gray-500">Bangladesh Railway</p>
+          <p class="pt-4 Sub-Title-font text-3xl">163</p>
+          <div
+            class="w-14 bg-slate-200 Regular-font text-gray-500 flex justify-center rounded-3xl"
+          >
+            Travel
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-4">
+            <button
+              class="btn btn-neutral btn-outline text-gray-500 border-gray-400"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/copy-regular-full.svg"
+                alt="Copy-icon"
+              />Copy
+            </button>
+            <button
+              class="btn btn-neutral btn-outline text-white bg-green-600 border-transparent"
+            >
+              <img
+                class="w-7 h-6"
+                src="assets/phone-solid-full.svg"
+                alt="Call-icon"
+              />Call
+            </button>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </main>
 
     <footer></footer>
   </body>
