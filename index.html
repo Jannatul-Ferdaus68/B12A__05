@@ -4,17 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emargency Hotline</title>
+    <link rel="stylesheet" href="Style/style.css" />
     <!-- DaisyUI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
-      type="text/css"/>
+      type="text/css"
+    />
     <!-- Tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header></header>
 
+
+  <body class="max-w-full">
+    <header class="pt-4">
+      <nav class="max-w-9/10 mx-auto flex justify-between bg-white pb-4">
+        <div class="flex items-center gap-2">
+          <img class="w-13 h-13" src="assets/logo.png" alt="Logo" />
+          <h1 class="Title-font text-green-800 md:text-2xl text-xl" >Emergency<br />Service</h1>
+        </div>
+        <div class="flex items-center text-sm gap-3">
+          <div class="w-15 h-8 md:w-20 md:h-10 bg-green-100 flex gap-1 justify-center items-center rounded-3xl Sub-Title-font">
+            <div class="Likes-count">0</div>
+            <img class="w-6 h-6" src="assets/heart.png" alt="Like" />
+          </div>
+          <div class="w-15 h-8 md:w-20 md:h-10 bg-green-100 flex gap-1 justify-center items-center rounded-3xl Sub-Title-font">
+            <div class="Coins-count">100</div>
+            <img class="w-5 h-5" src="assets/coin.png" alt="Coin" />
+          </div>
+          <div class="w-15 h-8 md:w-25 md:h-10 bg-green-600 flex gap-1 justify-center items-center rounded-3xl Regular-font text-white">
+            <div class="Copy-count">0</div>
+            <div >Copy</div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner bg-emerald-900 flex flex-col items-center gap-3 p-5">
+        <img class="w-25 h-25" src="assets/logo-dark.png" alt="Logo">
+        <h1 class="Title-font text-white text-3xl">Emergency Service Directory</h1>
+        <p class="Regular-font  text-white text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+      </div>
+    </header>
+    
     <main></main>
 
     <footer></footer>
