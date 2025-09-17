@@ -19,6 +19,13 @@ copies[i].addEventListener('click', function(){
         Copies_count++;
         document.getElementById("Copy-count").innerText = Copies_count;
         console.log(Copies_count);
+
+        let card = this.closest(".cards");
+
+
+        let serviceNumber = card.getElementsByTagName("p")[1].innerText;
+
+        navigator.clipboard.writeText(serviceNumber)
 })
 }
 
@@ -70,5 +77,13 @@ coins[i].addEventListener('click', function(){
         
 })
 }
+
+let clearBtn = document.getElementById("clearBtn");
+clearBtn.addEventListener('click', function(){
+
+        const historyContainer = document.getElementById("history_container");
+
+        historyContainer.innerHTML = ""; 
+});
 
 
